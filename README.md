@@ -2,7 +2,7 @@
 
 This is a minimal browser-based session replay tool, inspired by how tools like [FullStory](https://www.fullstory.com/).
 
-It captures a snapshot of the DOM, records user interactions (clicks, text input), and replays them in a simulated environment — all client-side currently.
+It captures a snapshot of the DOM, records user interactions (clicks, text input), and replays them in a simulated environment, all client-side currently.
 
 ## Features
 
@@ -25,7 +25,7 @@ It captures a snapshot of the DOM, records user interactions (clicks, text input
 | `tracker.js` | Code to capture DOM + user events |
 | `replay.js` | Code to replay DOM and simulate interactions |
 
-## 🧠 How It Works
+## How It Works
 
 ### Tracking (in `tracker.js`)
 - On page load, we grab `document.body.outerHTML` and store it as the snapshot.
