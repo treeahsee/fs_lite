@@ -1,0 +1,40 @@
+<!-- replay.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Session Replay</title>
+</head>
+<body>
+  <iframe id="replay-frame" style="width: 100%; height: 90vh;"></iframe>
+    <script>
+    const session = JSON.parse(localStorage.getItem("fs-lite-session"));
+    const iframe = document.getElementById("replay-frame");
+
+    iframe.srcdoc = session.snapshot;
+
+    iframe.onload = () => {
+        const frameDoc = iframe.contentDocument;
+
+        session.events.forEach((event) => {
+        setTimeout(() => {
+            const el = frameDoc.getElementById(event.data.id);
+            if (!el) return;
+
+            if (event.type === "click") {
+            el.style.outline = "2px solid orange";
+            }
+
+            if (event.type === "input") {
+            el.value = event.data.value;
+            el.style.background = "#e6f7ff";
+            }
+
+            if (event.type === "scroll") {
+            iframe.contentWindow.scrollTo(0, event.data.scrollY);
+            }
+        }, event.timestamp);
+        });
+    };
+    </script>
+</body>
+</html>
