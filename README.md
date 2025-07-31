@@ -13,10 +13,6 @@ It captures a snapshot of the DOM, records user interactions (clicks, text input
 - Highlights clicked elements
 - Simulates text input events
 
-## Demo
-
-> Open `index.html` in your browser and interact with the page. Then click **"Replay Session"** to see a playback.
-
 ##  Files
 
 | File | Purpose |
