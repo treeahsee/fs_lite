@@ -59,4 +59,5 @@ Clone this repo or copy the files, then open `index.html` in your browser:
 ```bash
 git clone https://github.com/your-username/session-replay-demo
 cd session-replay-demo
-open index.html
+open index.html and make changes
+open replay.html and observe the changes automatically replaying
