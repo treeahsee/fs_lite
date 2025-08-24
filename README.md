@@ -57,7 +57,8 @@ It captures a snapshot of the DOM, records user interactions (clicks, text input
 Clone this repo or copy the files, then open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/treeahsee/fs_lite.git
+mkdir session-replay-demo
 cd session-replay-demo
-open index.html and make changes
-open replay.html and observe the changes automatically replaying
+git clone https://github.com/treeahsee/fs_lite.git
+open index.html in browser and interact 
+open replay.html in browser and observe the changes automatically replaying
