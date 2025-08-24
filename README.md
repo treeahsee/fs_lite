@@ -19,7 +19,7 @@ It captures a snapshot of the DOM, records user interactions (clicks, text input
 |------|---------|
 | `index.html` | Sample page with tracker and UI |
 | `tracker.js` | Code to capture DOM + user events |
-| `replay.js` | Code to replay DOM and simulate interactions |
+| `replay.html` | Page that replays the user actions |
 
 ## How It Works
 
